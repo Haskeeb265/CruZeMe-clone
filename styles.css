@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: gilroy;
+    src: url(fonts/Gilroy-Regular.ttf);
+}
+
+@font-face {
+    font-family: heavitas;
+    src: url(fonts/Heavitas.ttf);
+}
