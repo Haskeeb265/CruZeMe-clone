@@ -18,7 +18,10 @@
 			<div class="navbarr">
 				<div class="logo"> <img src="images/logo-img.png" alt=""> </div>
 				<nav>
-					<ul class="navlinks">
+					<div class="hamburger" id="hamburger">
+						<img src="images/hamburger-icon.png" alt="">
+					</div>
+					<ul class="navlinks" id="navlinks">
 						<li class="nav-options"><a href="#">Home</a></li>
 						<li class="nav-options"><a href="#feature">Features</a></li>
 						<li class="nav-options"><a href="#aboutus">About Us</a></li>
@@ -291,6 +294,15 @@
 
 	
 	<script>
+
+	//Hamburger menu script
+	const hamburger = document.getElementById('hamburger');
+	const navlinks = document.getElementById('navlinks');
+
+	hamburger.addEventListener('click', () => {
+    navlinks.classList.toggle('open');
+	});
+
 	//Script for changing the HTML between passenger and driver in the "How it works" section 
 	document.getElementById('driver-btn').addEventListener('click', function(event) {
 		event.preventDefault();
