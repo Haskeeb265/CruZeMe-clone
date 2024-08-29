@@ -307,6 +307,7 @@ span {
 
 .features-bullets {
 	display: flex;
+	justify-content: space-between;
 }
 
 .bullets li {
@@ -319,10 +320,6 @@ span {
 	display: flex;
 	color: #98A2B3;
 	gap: 10px;
-}
-
-.bullets2 {
-	margin-left: 80px;
 }
 
 .features-img {
@@ -833,8 +830,8 @@ margin-bottom: 60px;
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
 
-	.navbarr,.hero-text, .aboutus, .cta-sec, .features, .howitworks, .faq, .footer-row1, .footer-row2, .footer-row3{
-		width: 70%;
+	.navbarr,.hero-text, .aboutus, .cta-sec, .features, .howitworks, .footer-row1, .footer-row2, .footer-row3{
+		width: 80%;
 	}
 
 	.logo{
@@ -872,6 +869,7 @@ margin-bottom: 60px;
 
 	.hero-heading{
 		font-size: 50px;
+		line-height: 70px;
 	}
 	
 	.hero-para{
@@ -880,7 +878,7 @@ margin-bottom: 60px;
 	}
 
 	.storebtn-div p{
-		font-size: 16px;
+		font-size: 11px;
 	}
 
 	.aboutus-heading h2 {
@@ -931,7 +929,9 @@ margin-bottom: 60px;
 	}
 
 	.howitworks-btn {
-		width: 41%;
+		width: 50%;
+		padding-left:15px;
+		padding-right:15px;
 	}
 
 	.column1 h2, .column3 h2, .column2 h2, .column4 h2 {
@@ -972,17 +972,9 @@ margin-bottom: 60px;
 		font-size: 11px;
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	footer{
+		padding-top: 100px;
+	}
 	
 	.hero-img img {
         width: 95%;
@@ -999,7 +991,7 @@ margin-bottom: 60px;
 	}
 
 	.cta-column2 img{
-		width: 300px;
+		width: 280px;
 	}
 
 	.aboutus-img img {
@@ -1011,9 +1003,423 @@ margin-bottom: 60px;
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
 
+	.navbarr,.hero-text, .aboutus, .cta-sec, .features, .howitworks, .footer-row1, .footer-row2, .footer-row3{
+		width: 85%;
+	}
+
+	.logo{
+		margin: 0 auto;
+	}	
+
+	.navbarr {
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        display: flex; 
+    }
+
+    #navlinks {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease-in-out;
+    }
+
+    #navlinks.open {
+        height: 100vh; 
+    }
+
+    .nav-options {
+        text-align: center;
+        padding: 15px 0;
+    }
+
+	.hero-heading h1 {
+		font-size: 55px;
+		line-height: 53px;
+	}
+
+	.storebtn-div p{
+		font-size: 14px;
+	}
+
+	.aboutus{
+		padding-top: 200px;
+		display: block;
+	}
+
+	.aboutus-text {
+		padding-top: 50px;
+		text-align: center;
+	}
+
+	.aboutus-heading{
+		margin: 0 auto;
+	}
+
+	.aboutus-heading p{
+		text-align: center;
+	} 
+
+	.aboutus-heading h2{
+		text-align: center;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+
+	.aboutus-para p{
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	.aboutus-img{
+		padding-right: 0px;
+		display: flex;
+
+	}
+
+	.features{
+		display: block;
+		margin-top: 150px;
+	}
+
+	.features-text{
+		padding-left: 0px;
+	}
+
+	.features-heading p, .features-heading h2, .features-para p{
+		text-align: center;	
+	}
+
+	.hero-img img {
+        width: 95%;
+        max-width: 950px; 
+        height: auto; 
+    }
+
+	.features-img{
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+	}
+
+	.features-img img{
+		width: 500px;
+
+	}
+
+	.howitworks-column2 {
+		padding: 0px;
+	}
+
+	.cta-column2 img{
+		width: 222px;
+	}
+
+	.aboutus-img img {
+        width: 500px;
+		padding-top: 0px;
+		margin: 0 auto;
+    }
+
+	.howitworks-column2 img {
+        width: 200px;
+		
+    }
+
+	.howitworks{
+		display: block;
+	}
+
+	.howitworks-btn{
+		width: 45%;
+	}
+
+	.answer p{
+		text-align: center;
+	}
+
+	.cta-sec{
+		display: block;
+	}
+
+	.cta-column2{
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.cta-column2 img{
+		width: 400px;
+	}
+
+	.cta-column1{
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.cta-btn-div{
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.cta-btns li{
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.footer-row1, .footer-row2, .footer-row3{
+		display: block;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.row1-slogan{
+		margin-bottom: 25px;
+	}
+
+	.row2-nav ul{
+		display: block;
+	}
+
+	.row2-nav{
+		margin-top: 30px;
+		margin-bottom: 0px;
+	}
+
+	.footer-row2{
+		margin-bottom: 30px;
+	}
+
+	.row2-socials li{
+		margin-bottom: 30px;
+	}
+
+	.row2-socials ul{
+		justify-content: center;
+	}
+
+	.row2-nav li{
+		margin-bottom: 50px;
+	}
+	.footer-row2{
+		height: 45vh;
+	}
+
+	.footer-row3 p ,.footer-row3 a{
+		margin-bottom: 10px;
+	}
+
+
+
 }
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
+
+	.navbarr,.hero-text, .aboutus, .cta-sec, .features, .howitworks, .footer-row1, .footer-row2, .footer-row3{
+		width: 100%;
+	}
+	
+	.hero-sec{
+		padding-top: 26px;
+	}
+	
+	.hero-heading h1 {
+		font-size: 28px;
+		line-height: 40px;
+		width: 100%;
+	}
+
+	.hero-para p{
+		width: 100%;
+		font-size: 13px;
+		line-height: 15px;
+	}
+
+	.hero-img {
+		width: 100%;
+		margin: 20px auto;
+	}
+
+	.hero-img img {
+        width: 100%;
+	}
+
+	.store-btns{
+		display: block;
+		margin-top: 20px;
+	}
+	.store-btns img {
+		width: 150px;
+		margin-bottom: 20px;
+	}
+
+	.storebtn-div{
+		width: 100%;
+		text-align: center;
+	}
+
+	.storebtn-div p {
+        font-size: 18px;
+    }
+
+	.aboutus {
+        padding-top: 0px;
+        display: block;
+    }
+
+	.aboutus-img img{
+		width: 350px;
+	}
+
+	.aboutus-heading p {
+		font-size: 16px;
+		margin-bottom: 0px;
+	}
+
+	.aboutus-heading h2 {
+		font-size: 28px;
+		line-height: 40px;
+	}
+
+	.aboutus-heading h2 {
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+	}
+	
+	
+	.features-heading p{
+		margin-bottom: 0px;
+	}
+
+	.features-heading h2{
+		font-size: 28px;
+		margin-bottom: 0px;
+	}
+
+	.features-para p {
+		font-size: 16px;
+	}
+
+	.features-bullets , .bullets1, .bullets2{
+		display: block;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.bullets li{
+		display: block;
+	}
+
+	.bullets img{
+		margin-bottom: 10px;
+	}
+
+	.features-img img {
+        width: 350px;
+	}
+
+	.howitworks{
+		padding-top: 100px;
+	}
+
+	.howitworks-heading h2{
+		font-size: 28px;
+	}
+	.howitworks-subheading p{
+		font-size: 16px;
+	}
+
+	.howitworks-btn{
+		width: 60%;
+	}
+
+	.column1 img, .column2 img, .column3 img, .column4 img{
+		width: auto;
+		height: 25px;
+	}
+
+	.column1 h2, .column2 h2, .column3 h2, .column4 h2{
+		font-size: 16px;
+		line-height: 20px;
+	}
+
+	.column1 p, .column2 p, .column3 p, .column4 p{
+		font-size: 11px;
+		line-height: 20px;
+	}
+
+	.faq-heading{
+		font-size: 28px;
+	}
+
+	.faq-subheading {
+		font-size: 16px;
+	}
+
+	.faq-subsubheading{
+		font-size: 16px;
+	} 
+
+	.cta-text h2{
+		font-size: 28px;
+	}
+
+	.cta-logo img{
+		width: 150px ;
+	}
+
+	.cta-text p{
+		font-size: 16px;
+	}
+
+	.cta-btns{
+		margin: 0 auto;
+		display: block;
+	}
+
+	.cta-btns img{
+		width: 140px;
+		margin-bottom: 20px;
+	}
+
+	.cta-statement{
+		font-size: 16px;
+	}
+
+	.cta-column2 img{
+		width: 300px;
+		margin-top: 20px;
+	}
+
+
+	.row2-nav{
+
+		margin-top: 70px;
+		margin-bottom: 20px;
+	}
+
+	.row2-nav li {
+        margin-bottom: 10px;
+	}
+
+	.footer-row2 {
+        height: 38vh;
+	}
+
+	footer{
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	
+
 
 }

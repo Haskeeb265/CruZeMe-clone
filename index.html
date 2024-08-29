@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="styles.css">
 	<link href="script.js">
 	<link rel="icon" href="images/bullet-img.png">
+	<link href="splide/node_modules/@splidejs/splide/dist/css/splide.min.css" rel="stylesheet">
 	<title>CruZeMe (Me)</title>
 </head>
 
@@ -35,6 +36,20 @@
 	</header>
 
 
+	<!--Splide Slider-->
+
+	<div id="splide" class="splide">
+		<div class="splide__track">
+		  <ul class="splide__list">
+			<li class="splide__slide">Slide 1</li>
+			<li class="splide__slide">Slide 2</li>
+			<li class="splide__slide">Slide 3</li>
+		  </ul>
+		</div>
+	  </div>
+
+
+	  
 	<section class="hero-sec">
 		<div class="container">
 			<div class="hero-text">
@@ -265,80 +280,6 @@
 			<!--Terms and conditions and copyright-->
 		</div>
 	</footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-	<script>
-
-	//Hamburger menu script
-	const hamburger = document.getElementById('hamburger');
-	const navlinks = document.getElementById('navlinks');
-
-	hamburger.addEventListener('click', () => {
-    navlinks.classList.toggle('open');
-	});
-
-	//Script for changing the HTML between passenger and driver in the "How it works" section 
-	document.getElementById('driver-btn').addEventListener('click', function(event) {
-		event.preventDefault();
-		document.getElementById('column2h2').textContent = 'Start Your Journey';
-		toggleActiveClass(this);
-	});
-	document.getElementById('passenger-btn').addEventListener('click', function(event) {
-		event.preventDefault();
-		document.getElementById('column2h2').textContent = 'Enter your Destination';
-		toggleActiveClass(this);
-	});
-
-	function toggleActiveClass(activeElement) {
-		document.getElementById('driver-btn').classList.remove('active');
-		document.getElementById('passenger-btn').classList.remove('active');
-		activeElement.classList.add('active');
-	}
-	//Script for Accordion
-	document.querySelectorAll('.question').forEach((question) => {
-		question.addEventListener('click', function() {
-			this.classList.toggle('active');
-			const answer = this.nextElementSibling;
-			if(answer.style.maxHeight) {
-				answer.style.maxHeight = null;
-			} else {
-				answer.style.maxHeight = answer.scrollHeight + "px";
-			}
-			document.querySelectorAll('.question.active').forEach((activeQuestion) => {
-				if(activeQuestion !== this) {
-					activeQuestion.classList.remove('active');
-					activeQuestion.nextElementSibling.style.maxHeight = null;
-				}
-			});
-		});
-	});
-	</script>
 </body>
-
+<script src="script.js"></script>
 </html>
