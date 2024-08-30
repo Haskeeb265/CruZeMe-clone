@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="styles.css">
 	<link href="script.js">
 	<link rel="icon" href="images/bullet-img.png">
-	<link href="splide/node_modules/@splidejs/splide/dist/css/splide.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="splide/node_modules/@splidejs/splide/dist/css/splide.min.css">
 	<title>CruZeMe (Me)</title>
 </head>
 
@@ -37,20 +37,95 @@
 
 
 	<!--Splide Slider-->
-
-	<div id="splide" class="splide">
+	<section class="splide" aria-label="Splide Basic HTML Example">
 		<div class="splide__track">
-		  <ul class="splide__list">
-			<li class="splide__slide">Slide 1</li>
-			<li class="splide__slide">Slide 2</li>
-			<li class="splide__slide">Slide 3</li>
-		  </ul>
+			  <ul class="splide__list">
+				  <li class="splide__slide">
+					<section class="hero-sec">
+						<div class="container">
+							<div class="hero-text">
+								<div class="hero-heading">
+									<h1>the <span>best way (SLIDE#1)</span> to get wherever you're going</h1> </div>
+								<div class="hero-para">
+									<p>Lorem ipsum dolor sit amet consectetur. Dui facilisis platea lectus tortor mauris lectus sed massa. Tempus purus viverra eget sit feugiat. Donec vitae pharetra tellus nibh pellentesque commodo in. Sed aliquet lacus malesuada. </p>
+								</div>
+							</div>
+							<div class="hero-img"> <img src="images/hero-img.png" alt=""> </div>
+						</div>
+						<div class="storebtn-div">
+							<ul class="store-btns">
+								<li>
+									<a href="https://www.apple.com/store" target="_blank"><img src="images/apple-btn.png" alt=""></a>
+								</li>
+								<li>
+									<a href="https://play.google.com/store/apps?hl=en" target="_blank"><img src="images/google-btn.png" alt=""></a>
+								</li>
+							</ul>
+							<p>Application is free to download on IOS</p>
+						</div>
+					</section>
+
+
+				  </li>
+				  <li class="splide__slide">
+
+					<section class="hero-sec">
+						<div class="container">
+							<div class="hero-text">
+								<div class="hero-heading">
+									<h1>the <span>best way (SLIDE#2)</span> to get wherever you're going</h1> </div>
+								<div class="hero-para">
+									<p>Lorem ipsum dolor sit amet consectetur. Dui facilisis platea lectus tortor mauris lectus sed massa. Tempus purus viverra eget sit feugiat. Donec vitae pharetra tellus nibh pellentesque commodo in. Sed aliquet lacus malesuada. </p>
+								</div>
+							</div>
+							<div class="hero-img"> <img src="images/hero-img.png" alt=""> </div>
+						</div>
+						<div class="storebtn-div">
+							<ul class="store-btns">
+								<li>
+									<a href="https://www.apple.com/store" target="_blank"><img src="images/apple-btn.png" alt=""></a>
+								</li>
+								<li>
+									<a href="https://play.google.com/store/apps?hl=en" target="_blank"><img src="images/google-btn.png" alt=""></a>
+								</li>
+							</ul>
+							<p>Application is free to download on IOS</p>
+						</div>
+					</section>
+
+				  </li>
+				  <li class="splide__slide">
+
+					<section class="hero-sec">
+						<div class="container">
+							<div class="hero-text">
+								<div class="hero-heading">
+									<h1>the <span>best way (SLIDE#3)</span> to get wherever you're going</h1> </div>
+								<div class="hero-para">
+									<p>Lorem ipsum dolor sit amet consectetur. Dui facilisis platea lectus tortor mauris lectus sed massa. Tempus purus viverra eget sit feugiat. Donec vitae pharetra tellus nibh pellentesque commodo in. Sed aliquet lacus malesuada. </p>
+								</div>
+							</div>
+							<div class="hero-img"> <img src="images/hero-img.png" alt=""> </div>
+						</div>
+						<div class="storebtn-div">
+							<ul class="store-btns">
+								<li>
+									<a href="https://www.apple.com/store" target="_blank"><img src="images/apple-btn.png" alt=""></a>
+								</li>
+								<li>
+									<a href="https://play.google.com/store/apps?hl=en" target="_blank"><img src="images/google-btn.png" alt=""></a>
+								</li>
+							</ul>
+							<p>Application is free to download on IOS</p>
+						</div>
+					</section>
+
+				  </li>
+			  </ul>
 		</div>
-	  </div>
-
-
+	  </section>
 	  
-	<section class="hero-sec">
+	<!-- <section class="hero-sec">
 		<div class="container">
 			<div class="hero-text">
 				<div class="hero-heading">
@@ -72,7 +147,7 @@
 			</ul>
 			<p>Application is free to download on IOS</p>
 		</div>
-	</section>
+	</section> -->
 
 
 	<section class="aboutus-sec">
@@ -282,4 +357,11 @@
 	</footer>
 </body>
 <script src="script.js"></script>
+<script src="splide/node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+	<script>
+		new Splide( '.splide', {
+			type   : 'loop', 
+			perPage: 1,
+			} ).mount();
+	</script>
 </html>

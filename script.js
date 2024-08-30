@@ -1,22 +1,4 @@
-import './splide/node_modules/@splidejs/splide/dist/css/themes/splide.min.css';
-import Splide from './splide/node_modules/@splidejs/splide';
-    
-
-document.addEventListener('DOMContentLoaded', function () {
-    new Splide('#splide').mount();
-  });
-
-  new Splide('#splide', {
-    type: 'loop',
-    perPage: 1,
-    perMove: 1,
-    gap: '1rem',
-    pagination: false,
-    arrows: true,
-  }).mount();
-
-    
-    //Hamburger menu script
+	//Hamburger menu script
 	const hamburger = document.getElementById('hamburger');
 	const navlinks = document.getElementById('navlinks');
 
