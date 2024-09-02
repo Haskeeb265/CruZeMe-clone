@@ -7,21 +7,18 @@
 	<link rel="stylesheet" href="styles.css">
 	<link href="script.js">
 	<link rel="icon" href="images/bullet-img.png">
-	<link rel="stylesheet" href="splide/node_modules/@splidejs/splide/dist/css/splide.min.css">
+	<link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
+	<link rel="stylesheet" href="node_modules/tabbyjs/dist/css/tabby-ui.min.css">
 	<title>CruZeMe (Me)</title>
 </head>
 
 <body>
-
-
 	<header>
 		<div class="container">
 			<div class="navbarr">
 				<div class="logo"> <img src="images/logo-img.png" alt=""> </div>
 				<nav>
-					<div class="hamburger" id="hamburger">
-						<img src="images/hamburger-icon.png" alt="">
-					</div>
+					<div class="hamburger" id="hamburger"> <img src="images/hamburger-icon.png" alt=""> </div>
 					<ul class="navlinks" id="navlinks">
 						<li class="nav-options"><a href="#">Home</a></li>
 						<li class="nav-options"><a href="#feature">Features</a></li>
@@ -35,12 +32,11 @@
 		</div>
 	</header>
 
-
 	<!--Splide Slider-->
 	<section class="splide" aria-label="Splide Basic HTML Example">
 		<div class="splide__track">
-			  <ul class="splide__list">
-				  <li class="splide__slide">
+			<ul class="splide__list">
+				<li class="splide__slide">
 					<section class="hero-sec">
 						<div class="container">
 							<div class="hero-text">
@@ -64,11 +60,8 @@
 							<p>Application is free to download on IOS</p>
 						</div>
 					</section>
-
-
-				  </li>
-				  <li class="splide__slide">
-
+				</li>
+				<li class="splide__slide">
 					<section class="hero-sec">
 						<div class="container">
 							<div class="hero-text">
@@ -92,10 +85,8 @@
 							<p>Application is free to download on IOS</p>
 						</div>
 					</section>
-
-				  </li>
-				  <li class="splide__slide">
-
+				</li>
+				<li class="splide__slide">
 					<section class="hero-sec">
 						<div class="container">
 							<div class="hero-text">
@@ -119,12 +110,10 @@
 							<p>Application is free to download on IOS</p>
 						</div>
 					</section>
-
-				  </li>
-			  </ul>
+				</li>
+			</ul>
 		</div>
-	  </section>
-	  
+	</section>
 	<!-- <section class="hero-sec">
 		<div class="container">
 			<div class="hero-text">
@@ -149,7 +138,6 @@
 		</div>
 	</section> -->
 
-
 	<section class="aboutus-sec">
 		<div class="container">
 			<div class="aboutus">
@@ -166,8 +154,6 @@
 			</div>
 		</div>
 	</section>
-
-
 	<section class="features-sec">
 		<div class="container">
 			<div class="features">
@@ -206,17 +192,99 @@
 		</div>
 	</section>
 
-
-	<section class="howitworks-sec">
+	<!-- How it works Section -->
+	 
+	<!-- <section class="howitworks-sec">
 		<div class="container">
 			<div id="howitwork" class="howitworks">
 				<div class="howitworks-heading">
 					<h2><span>How</span> it works</h2> </div>
 				<div class="howitworks-subheading">
 					<p>Lorem ipsum dolor sit amet consectetur. Sollicitudin ut.</p>
+				</div> -->
+	<div class="howitworks-btn">
+		<ul data-tabs>
+			<li><a data-tabby-default href="#passenger">Passenger</a></li>
+			<li><a href="#driver">Driver</a></li>
+		</ul>
+	</div>
+	<div id="passenger">
+		<section class="howitworks-sec">
+			<div class="container">
+				<div id="howitwork" class="howitworks">
+					<div class="howitworks-heading">
+						<h2><span>How</span> it works</h2> </div>
+					<div class="howitworks-subheading">
+						<p>Lorem ipsum dolor sit amet consectetur. Sollicitudin ut.</p>
+					</div>
+					<div class="howitworks-columns">
+						<div class="howitworks-column1">
+							<div class="column1"> <img src="images/1bullet-img.png" alt="">
+								<h2>Open the CruZe Me</h2>
+								<p>Lorem ipsum dolor sit amet consectetur. Libero.</p>
+							</div>
+							<div class="column3"> <img src="images/3bullet-img.png" alt="">
+								<h2>Confirm your ride</h2>
+								<p>Lorem ipsum dolor sit amet consectetur. Libero.</p>
+							</div>
+						</div>
+						<div class="howitworks-column2"> <img src="images/howitworks-img.png" alt=""> </div>
+						<div class="howitworks-column3">
+							<div class="column2"> <img src="images/2bullet-img.png" alt="">
+								<h2 id="column2h2">Enter your Destination</h2>
+								<p>Lorem ipsum dolor sit amet consectetur. Libero.</p>
+							</div>
+							<div class="column4"> <img src="images/4bullet-img.png" alt="">
+								<h2>Track and Enjoy your life</h2>
+								<p>Lorem ipsum dolor sit amet consectetur. Libero.</p>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="howitworks-btn"> <a id="passenger-btn" class="active" href="">Passenger</a> <a id="driver-btn" href="">Driver</a> </div>
-				<div class="howitworks-columns">
+			</div>
+		</section>
+	</div>
+	<div id="driver">
+		<section class="howitworks-sec">
+			<div class="container">
+				<div id="howitwork" class="howitworks">
+					<div class="howitworks-heading">
+						<h2><span>How</span> it works</h2> </div>
+					<div class="howitworks-subheading">
+						<p>Lorem ipsum dolor sit amet consectetur. Sollicitudin ut.</p>
+					</div>
+					<div class="howitworks-columns">
+						<div class="howitworks-column1">
+							<div class="column1"> <img src="images/1bullet-img.png" alt="">
+								<h2>Open the CruZe Me</h2>
+								<p>Lorem ipsum dolor sit amet consectetur. Libero.</p>
+							</div>
+							<div class="column3"> <img src="images/3bullet-img.png" alt="">
+								<h2>Confirm your ride</h2>
+								<p>Lorem ipsum dolor sit amet consectetur. Libero.</p>
+							</div>
+						</div>
+						<div class="howitworks-column2"> <img src="images/howitworks-img.png" alt=""> </div>
+						<div class="howitworks-column3">
+							<div class="column2"> <img src="images/2bullet-img.png" alt="">
+								<h2 id="column2h2">Start your journey</h2>
+								<p>Lorem ipsum dolor sit amet consectetur. Libero.</p>
+							</div>
+							<div class="column4"> <img src="images/4bullet-img.png" alt="">
+								<h2>Track and Enjoy your life</h2>
+								<p>Lorem ipsum dolor sit amet consectetur. Libero.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<!-- <div class="howitworks-btn">
+					<a id="passenger-btn" class="active" href="">Passenger</a>
+					<a id="driver-btn" href="">Driver</a>
+				</div> -->
+	<!-- <div class="howitworks-columns">
 					<div class="howitworks-column1">
 						<div class="column1"> <img src="images/1bullet-img.png" alt="">
 							<h2>Open the CruZe Me</h2>
@@ -241,9 +309,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
-
-
+	</section> -->
 	<section class="faq-sec">
 		<div class="container">
 			<div class="faq">
@@ -285,8 +351,6 @@
 			</div>
 		</div>
 	</section>
-
-
 	<section class="CTA">
 		<div class="container">
 			<div class="cta-sec">
@@ -317,8 +381,7 @@
 		</div>
 	</section>
 
-
-	<footer>
+	<footer id="contact">
 		<div class="container">
 			<div class="footer-row1">
 				<div class="row1-img"> <img src="images/footerlogo-img.png" alt=""> </div>
@@ -338,7 +401,7 @@
 				<div class="row2-socials">
 					<ul>
 						<li>
-							<a href=""><img src="images/instagramlogo-img.png" alt=""></a>
+							<a href="https://www.instagram.com/"><img src="images/instagramlogo-img.png" alt=""></a>
 						</li>
 						<li>
 							<a href=""><img src="images/facebooklogo-img.png" alt=""></a>
@@ -357,11 +420,18 @@
 	</footer>
 </body>
 <script src="script.js"></script>
-<script src="splide/node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
-	<script>
-		new Splide( '.splide', {
-			type   : 'loop', 
-			perPage: 1,
-			} ).mount();
-	</script>
+<script src="node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+<script>
+new Splide('.splide', {
+	type: 'loop',
+	perPage: 1,
+	height: 1000,
+	drag: true,
+}).mount();
+</script>
+<script src="node_modules/tabbyjs/dist/js/tabby.polyfills.min.js"></script>
+<script>
+var tabs = new Tabby('[data-tabs]');
+</script>
+
 </html>
